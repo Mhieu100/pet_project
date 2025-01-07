@@ -5,7 +5,7 @@ body {
 	background-size: cover;
 	background-position: center;
 	line-height: 1.6;
- }
+}
 
 h1 {
 	font-size: 24px;
@@ -30,7 +30,7 @@ em {
 }
 
 .next {
-    font-size: 15px;
+	font-size: 15px;
 	margin-top: 8px;
 	margin-bottom: 8px;
 }
@@ -39,7 +39,7 @@ em {
 	max-width: 700px;
 	margin-left: auto;
 	margin-right: auto;
-} 
+}
 
 .hero {
 	margin-top: 172px;
@@ -68,13 +68,14 @@ em {
 	color: #1967D2;
 	font-weight: 600;
 	padding: 16px 24px 16px 40px;
-	background: url('../img/lightbulb_icon.svg') #E8F0FE ;
+	background: url('../img/lightbulb_icon.svg') #E8F0FE;
 	background-position: 16px 16px;
 	background-repeat: no-repeat;
 	line-height: 1.6;
 }
 
-code, .code {
+code,
+.code {
 	font-family: 'Roboto Mono', Courier, monospace;
 	color: #A30038;
 	background-color: #F8F8F8;
@@ -100,39 +101,65 @@ code, .code {
 }
 
 .cta a:hover {
-    background-color: rgb(66, 133, 244, 0.9);
+	background-color: rgb(66, 133, 244, 0.9);
 }
 
 @media (max-width: 600px) {
-    .hero .logo {
-        float: initial;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+	.hero .logo {
+		float: initial;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
 
 	.container {
-        margin-top: 0;
+		margin-top: 0;
 	}
 
-    .hero {
-        margin-top: 0;
-        margin-bottom: 24px;
+	.hero {
+		margin-top: 0;
+		margin-bottom: 24px;
 	}
 }
+
 @media (prefers-color-scheme: dark) {
-    body {
-        background: black url('../img/dark_bg.svg');
-        color:white;
-    }
+	body {
+		background: black url('../img/dark_bg.svg');
+		color: white;
+	}
+
 	a {
 		color: #8AB4F8;
 	}
+
 	a:visited {
 		color: #b48af8;
 	}
+
 	.cta a {
 		color: white;
 	}
 }
 
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.sidebar {
+	background-color: #f8f9fa;
+	padding: 20px;
+}
+
+.main-content {
+	flex: 1;
+	padding: 20px;
+}
+
+.footer {
+	background-color: #343a40;
+	color: white;
+	text-align: center;
+	padding: 10px 0;
+}
